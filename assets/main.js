@@ -103,7 +103,7 @@ function Abrirfoto(params){
     
     if(params==1){
         dianamo = document.getElementById("DN").src;
-        if( dianamo == "assets/presentes/DN0.png"){
+        if( dianamo[(dianamo.length)-5] == 0){
             document.getElementById("DN").src = "assets/presentes/DN1.png"
             document.getElementById("btnabrir").innerText = "Fechar"
             document.getElementById("DN").className = `photo vertical extreme`;
@@ -118,7 +118,7 @@ function Abrirfoto(params){
         }
     } else if(params==2){
         dianamo = document.getElementById("meses").src;
-        if( dianamo == "assets/presentes/meses0.png"){
+        if( dianamo[(dianamo.length)-5] == 0){
             document.getElementById("meses").src = "assets/presentes/meses1.png"
             dianamo = document.getElementById("meses").src;
             document.getElementById("mesesdown").href = `assets/presentes/meses1.png`
@@ -129,7 +129,7 @@ function Abrirfoto(params){
         }
     } else {
         dianamo = document.getElementById("niver").src;
-        if( dianamo == "assets/presentes/niver0.png"){
+        if( dianamo[(dianamo.length)-5] == 0){
             document.getElementById("niver").src = "assets/presentes/niver1.png"
             dianamo = document.getElementById("niver").src;
             document.getElementById("niverdown").href = `assets/presentes/niver1.png`
