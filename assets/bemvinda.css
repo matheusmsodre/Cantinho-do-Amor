@@ -1,0 +1,195 @@
+@keyframes pop{
+
+    0%{
+        transform: translateX(0) translateY(0);
+    }
+    25%{
+        transform: translateX(10px) translateY(10px);
+    }
+    50%{
+        transform: translateX(0) translateY(20px);
+    }
+    75%{
+        transform: translateX(-10px) translateY(10px);
+    }
+    100%{
+        transform: translateX(0) translateY(0);
+    }
+}
+
+@keyframes shadow{
+
+    0%{
+        text-shadow: 2px 2px 0px rgb(255, 155, 155);
+    }
+    25%{
+        text-shadow: 2px 2px 0px rgb(29,14,57);
+    }
+    50%{
+        text-shadow: 2px 2px 0px rgb(255, 155, 155);
+    }
+    75%{
+        text-shadow: 2px 2px 0px rgb(29,14,57);
+    }
+    100%{
+        text-shadow: 2px 2px 0px rgb(255, 155, 155);
+    }
+}
+
+@keyframes esmaecedor{
+    from{
+        color: transparent;
+        text-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+    }
+    to{
+        color: rgb(255, 0, 64);
+        text-shadow: 2px 2px 0px rgb(255, 155, 155);
+    }
+}
+
+@keyframes GirarBtn{
+
+    from{
+        background-color: rgb(255, 155, 155,0);
+        color: transparent;
+        border: 0px solid rgb(255, 155, 155,0);
+    }
+    to{
+        background-color: rgb(255, 155, 155);
+        color: rgb(90, 16, 34);
+        border: 4px solid rgb(255, 155, 155);
+    }
+}
+
+@keyframes load{
+
+    to{
+        transform: translateY(-20px);
+        background-color: rgb(255, 15,57);
+        box-shadow: 0px 0px 1px 1px rgb(255, 155, 155);
+    }
+}
+
+
+
+body{
+    background: url("WelBAck.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+#contente{
+    text-align: center;
+    padding-bottom: 30px;
+    overflow-x: hidden;
+    background-size: contain;
+    margin-top: 50px;
+}
+
+h1{
+    margin-top: 0px;
+    letter-spacing: 2px;
+    font-size: 50pt;
+    color: rgb(255, 0, 64);
+    font-family: 'Yomogi', cursive;
+    text-shadow: 3px 3px 2px rgb(29,14,57);
+    font-weight: bold;
+    animation:pop 7s linear infinite, esmaecedor 2s linear forwards, shadow 10s linear infinite;
+    overflow-x: hidden;
+    background-size: contain;
+    padding: 20px;
+    padding-top: 0;
+}
+
+.btnx{
+    
+    margin: 5px;
+    margin-top: 100px;
+    cursor: pointer;
+    padding: 6px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-family: 'Yomogi', cursive;
+    font-size: 21pt;
+    font-weight: 600;
+    border-radius: 10px;
+    transition: 0.5s;
+    /*cor,borda,sombra*/
+    background-color: rgb(255, 15,57);
+    color: rgb(29,14,57);
+    border: 4px solid rgb(255, 15,57);
+    box-shadow: 0px 0px 30px 5px rgb(255, 155, 155);
+    /*animation: GirarBtn 4s linear forwards;*/
+}
+
+.btnx:hover{
+    
+    background-color: rgb(255, 15,57,0);
+    color: rgb(255, 15,57);
+    font-weight: bolder;
+    border: 0px solid rgb(255, 15,57);
+    box-shadow: 0px 0px 2px 2px rgb(255, 15,57);
+}
+#bolas{
+    width: 100%;
+    display: inline;
+}
+.ball{
+    background-color: rgb(29,14,57);
+    height: 20px;
+    width: 20px;
+    border: 2px solid rgb(255, 155, 155);
+    display: inline-block;
+    border-radius: 100%;
+    margin-right: 60px;
+    animation: load 0.6s alternate infinite;
+    box-shadow: 0px 0px 20px 2px rgb(255, 155, 155);
+}
+
+.ball.n2{
+    animation-delay: 0.1s;
+}
+
+.ball.n3{
+    animation-delay: 0.15s;
+}
+
+.ball.n4{
+    animation-delay: 0.20s;
+}
+
+.ball.n5{
+    animation-delay: 0.25s;
+}
+
+.ball.n6{
+    animation-delay: 0.30s;
+}
+
+.ball.n7{
+    animation-delay: 0.35s;
+}
+
+.ball.n8{
+    animation-delay: 0.40s;
+}
+
+.ball.n9{
+    animation-delay: 0.45s;
+}
+
+.ball.n10{
+    animation-delay: 0.50s;
+}
+
+.ball.n11{
+    animation-delay: 0.55s;
+}
+
+.ball.n12{
+    animation-delay: 0.6s;
+    
+}
+

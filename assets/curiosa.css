@@ -1,0 +1,63 @@
+body{
+    
+    background: url(o\ jogo\ Logotipo.jpg);
+    background-size: 150px;
+    background-color: black;
+    user-select: none;
+}
+
+#divcontem{
+    padding: 10px;
+    text-align: center;
+    background-image: linear-gradient(to top,rgb(255, 94, 0),rgb(97, 97, 97));
+    font-family:'Sahitya';
+    font-size: 20pt;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 5px black;
+    margin-top: 100px ;
+}
+
+.button{
+    margin-bottom: 50px;
+    color: rb;
+    cursor: pointer;
+    font-family: 'Sahitya';
+    font-size: 20pt;
+    background-color: rgb(97, 97, 97);
+    border: 0px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px 2px black;
+    transition: 0.3s;
+}
+
+.button:hover{
+    box-shadow: 0px 0px 10px 5px black;
+    background-color: rgb(97, 97, 97,0);
+}
+
+#dot{
+    background-color: black;
+    color: rgb(238,151,56);
+    font-size: 10pt;
+    font-family: 'Sahitya';
+    border: 0px;
+    border-radius: 5px;
+}
+
+.seta.img{
+    width: 100%;
+}
+
+#seta{
+    background-color: rgba(255, 94, 0);
+    width: 25px;
+    height: 35px;
+    margin-left: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 5px;
+    border: 1px solid rgb(255, 94, 0);
+    box-shadow: 0px 0px 5px 1px rgb(255, 94, 0);
+}
