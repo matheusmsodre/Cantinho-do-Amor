@@ -1,0 +1,196 @@
+body{
+    background:  url('bg1.jpg') no-repeat fixed center;
+    background-size: cover;
+    text-align: center;
+    margin:10pt;
+    user-select: none;
+}
+
+h1{
+    margin-top: -20px;
+}
+
+#pend{
+    margin-top: 0;
+    
+}
+
+#cabe{
+    width: 100%;
+    overflow-x: hidden;
+    font-size: 30pt;
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Sahitya';
+    background-image: linear-gradient(to top ,rgb(255, 0, 47),rgb(0, 0, 97));
+    margin-bottom: 80px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 10px #000061;
+}
+
+.envolve{
+    
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 97, 1);
+    margin-bottom: 80px;
+    width: 100%;
+    border-radius: 10px;
+    border: 3px solid rgba(0, 0, 97, 1);
+    overflow-x: hidden;
+    padding-bottom: 20px;
+}
+
+#pergunta{
+    font-size: 40px;
+    text-align: center;
+    color:white;
+    background-position: center;
+    font-family: 'Sahitya';
+    background-image: linear-gradient(to top ,rgb(255, 0, 47),rgb(0, 0, 97));
+    border: 0px solid rgba(0, 0, 97, 1);
+    border-radius: 0px;
+    overflow-x: hidden;
+    margin-bottom: 20px;
+    
+}
+
+.btn-quiz{
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: 'Sahitya';
+    color: white;
+    background-color: rgba(255, 0, 47,1);
+    padding: 5px;
+    border-radius: 8px;
+    font-size: 18pt;
+    border: 3px solid rgb(255, 0, 47);
+
+}
+
+.btn-quiz.foto{
+    
+    margin-bottom: 10px;
+    
+}
+
+.btn-quiz:hover{
+    
+    font-size: 21pt;
+    box-shadow: 0px 0px 2px 2px rgb(0, 0, 97);
+}
+
+.seta.img{
+    width: 100%;
+}
+
+#seta{
+    background-color: rgba(128, 255, 0, 0);
+    width: 25px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+#envolvebtn{
+    margin-top: -20px;
+    margin-bottom: 60px;
+    padding: 25px;
+    box-shadow: 0px 0px 2px 2px rgba(255, 0,47);
+    border: 3px solid rgb(255, 0, 47);
+    border-radius: 10px;
+    border-left: 100px solid rgb(255, 0, 47);
+    border-right: 100px solid rgb(255, 0, 47);
+}
+
+.btnfim{
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: 'Sahitya';
+    color: white;
+    background-color: rgba(255, 0, 47,1);
+    padding: 5px;
+    border-radius: 8px;
+    font-size: 15pt;
+    border: 3px solid rgb(255, 0, 47);
+    box-shadow: 0px 0px 2px 2px rgb(0, 0, 97);
+    margin-top: 8px;
+}
+
+.fimpp{
+    font-size: 14pt;
+    padding: 10px;
+}
+
+.fimpp2{
+    font-size: 14pt;
+    padding: 10px;
+    padding-bottom: 30px;
+}
+
+.btnfim:hover{
+    background-color: rgb(0, 0, 97,0);
+    border: 2px solid rgb(255, 0, 47);
+    color: rgb(255, 0, 47);
+}
+
+.btn-quiz.resp{
+    background-color: rgb(0, 0, 97);
+    border: 3px solid rgb(0, 0, 97);
+    margin-right: 15px;
+}
+
+.btn-quiz.resp:hover{
+    font-size: 18pt;
+    box-shadow: 0px 0px 5px 5px rgb(255, 0, 47);
+}
+#popup{
+    background-image: url(bg1.jpg);
+    background-size: cover;
+    width: 85%;
+    max-width: 700px;
+    max-height: 445px;
+    background-color: rgb(0, 87, 99);
+    color: cornsilk;
+    padding: 0;
+    position: fixed;
+    bottom: 0; right: 0;
+    left: 0; top: 0;
+    margin: auto;
+    border: 2px solid rgb(0, 0, 97);
+    box-shadow: 0px 0px 3px 3px rgb(0, 0, 97);
+    border-radius: 15px;
+    display: none;
+}
+
+
+#close{
+   background-color: rgba(255, 255, 0, 0);
+   text-align: center;
+   border: 2px solid rgb(255, 0, 47);
+   border-top: 2px solid rgb(0, 0, 97);
+   border-left: 2px solid rgb(0, 0, 97);
+   color: rgb(255, 0, 47);
+   padding: -2px;
+   font-size: 15px;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   border-top-left-radius: 15px;
+   border-bottom-right-radius: 5px;
+   width: 60px;
+   position: relative;
+   left: -2px;
+   top: -2px;
+}
+
+#close:hover{
+    background-color: rgb(255, 43, 43);
+    color: white;
+}
+
+#cabe1{
+    width: 100%;
+    font-size: 18pt;
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Sahitya';
+    background-image: linear-gradient(to top ,rgb(255, 0, 47),rgb(0, 0, 97));
+    box-shadow: 0px 0px 5px 5px rgb(0, 0, 97);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    
+}

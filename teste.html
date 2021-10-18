@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Sahitya&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/teste.css">
+    <link rel="shortcut icon" href="assets/ideas.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bom teste, Mudi!</title>
+</head>
+<body>
+
+    <div id="cabe">
+        <div id="seta" onclick="VoltarPagina()">
+            <img class="seta img" src="assets/seta.png" alt="" srcset="">
+        </div>
+        <h1>Hora do Teste amor!</h1>
+    </div>
+
+    <div id="firstid" class="envolve">    
+        <div id="pergunta">Qual foi o primeiro dia que nos vimos na vida, mundo toda?</div>
+
+        <div>
+            <button type="button" id="a" onclick="guardar(1,1),selecionar(1,0)" class="btn-quiz">3 de Fevereiro de 2020</button>
+            <br><br>
+            <button type="button" id="b" onclick="guardar('RespostaCorreta',1),selecionar(2,0)" class="btn-quiz RespostaCorreta">4 de Fevereiro de 2020</button>
+            <br><br>
+            <button type="button" id="c" onclick="guardar(3,1),selecionar(3,0)" class="btn-quiz">6 de Fevereiro de 2020</button>
+            <br><br>
+            <button type="button" id="d" onclick="guardar(4,1),selecionar(4,0)" class="btn-quiz">7 de Fevereiro de 2020</button>
+        </div>
+    </div>
+
+    <div class="envolve">    
+        <div id="pergunta">Quando foi o primeiro culto da família que assistimos juntos, meu amor?</div>
+
+        <div>
+            <button type="button" id="a" onclick="guardar(1,2),selecionar(1,4)" class="btn-quiz">28 de Fevereiro de 2020</button>
+            <br><br>
+            <button type="button" id="b" onclick="guardar(2,2),selecionar(2,4)" class="btn-quiz">29 de Fevereiro de 2020</button>
+            <br><br>
+            <button type="button" id="c" onclick="guardar('RespostaCorreta',2),selecionar(3,4)" class="btn-quiz RespostaCorreta">1 de Março de 2020</button>
+            <br><br>
+            <button type="button" id="d" onclick="guardar(4,2),selecionar(4,4)" class="btn-quiz">2 de Março de 2020</button>
+        </div>
+    </div>    
+
+    <div class="envolve">    
+            <div id="pergunta">Quando saímos para comer pela primeira vez juntos, meu bemzinho?</div>
+
+        <div>
+            <button type="button" id="a" onclick="guardar(1,3),selecionar(1,8)" class="btn-quiz">Após o segundo dia da <br> conferência Overview</button>
+            <br><br>
+            <button type="button" id="b" onclick="guardar('RespostaCorreta',3),selecionar(2,8)" class="btn-quiz RespostaCorreta">Após o primeiro <br> Culto da Família juntos</button>
+            <br><br>
+            <button type="button" id="c" onclick="guardar(3,3),selecionar(3,8)" class="btn-quiz">Após a primeira quarta-feira <br> da vitória juntos</button>
+            <br><br>
+            <button type="button" id="d" onclick="guardar(4,3),selecionar(4,8)" class="btn-quiz">Após o segundo Culto <br> da família juntos</button>
+        </div>
+    </div>    
+
+    <div class="envolve">    
+            <div id="pergunta">Onde saímos para comer pela primeira vez juntos, gatamor?</div>
+
+        <div>
+            <button type="button" id="a" onclick="guardar(1,4),selecionar(1,12)" class="btn-quiz">Dominos</button>
+            <br><br>
+            <button type="button" id="b" onclick="guardar('RespostaCorreta',4),selecionar(2,12)" class="btn-quiz RespostaCorreta">Pátio Shopping</button>
+            <br><br>
+            <button type="button" id="c" onclick="guardar(3,4),selecionar(3,12)" class="btn-quiz">Eky</button>
+            <br><br>
+            <button type="button" id="d" onclick="guardar(4,4),selecionar(4,12)" class="btn-quiz">Batistão</button>
+        </div>
+    </div>    
+
+    <div class="envolve">    
+            <div id="pergunta">O que comemos, respectivamente, eu e você, quando saimos para comer pela primeira vez, meu docinho?</div>
+
+        <div>
+            <button type="button" id="a" onclick="guardar(1,5),selecionar(1,16)" class="btn-quiz">Salmão e Burger King</button>
+            <br><br>
+            <button type="button" id="b" onclick="guardar(2,5),selecionar(2,16)" class="btn-quiz">Pizza Hut</button>
+            <br><br>
+            <button type="button" id="c" onclick="guardar(3,5),selecionar(3,16)" class="btn-quiz">Salmão e Buger do UATA</button>
+            <br><br>
+            <button type="button" id="d" onclick="guardar('RespostaCorreta',5),selecionar(4,16)" class="btn-quiz RespostaCorreta">Burger do UATA e Salmão</button>
+        </div>
+    </div>    
+
+    <div class="envolve">    
+            <div id="pergunta">
+            Nesta foto já namorávamos, vidamor?<br>
+            <img src="assets/ED2D5B0A-B7B0-4E16-A161-385EE19A2E60.JPG" alt="" width="50%" height="50%">
+            </div>
+
+        <div>
+            <button type="button" id="a" onclick="guardar(1,6),selecionar(1,20)" class="btn-quiz">Num saberio</button>
+            <br><br>
+            <button type="button" id="b" onclick="guardar(2,6),selecionar(2,20)" class="btn-quiz">Talvez</button>
+            <br><br>
+            <button type="button" id="c" onclick="guardar('RespostaCorreta',6),selecionar(3,20)" class="btn-quiz RespostaCorreta">Não mudi</button>
+            <br><br>
+            <button type="button" id="d" onclick="guardar(4,6),selecionar(4,20)" class="btn-quiz">Sim mudi</button>
+            
+        </div>
+    </div>
+
+    <div class="envolve">    
+            <div id="pergunta">Quando demos nosso primeiro beijo, nemorada toda?</div>
+
+        <div>
+            <button type="button" id="a" onclick="guardar(1,7),selecionar(1,24)" class="btn-quiz">5 de maio de 2020</button>
+            <br><br>
+            <button type="button" id="b" onclick="guardar(2,7),selecionar(2,24)" class="btn-quiz">4 de março de 2020</button>
+            <br><br>
+            <button type="button" id="c" onclick="guardar('RespostaCorreta',7),selecionar(3,24)" class="btn-quiz RespostaCorreta">5 de março de 2020</button>
+            <br><br>
+            <button type="button" id="d" onclick="guardar(4,7),selecionar(4,24)" class="btn-quiz">5 de fevereiro de 2020</button>
+        </div>
+    </div>    
+
+    <div class="envolve">    
+            <div id="pergunta">Quando começamos a namorar, princesa linda?</div>
+
+        <div>
+            <button type="button" id="a" onclick="guardar(1,8),selecionar(1,28)" class="btn-quiz">5 de maio de 2020</button>
+            <br><br>
+            <button type="button" id="b" onclick="guardar('RespostaCorreta',8),selecionar(2,28)" class="btn-quiz RespostaCorreta">5 de março de 2020</button>
+            <br><br>
+            <button type="button" id="c" onclick="guardar(3,8),selecionar(3,28)" class="btn-quiz">16 de março de 2020</button>
+            <br><br>
+            <button type="button" id="d" onclick="guardar(4,8),selecionar(4,28)" class="btn-quiz">16 de maio de 2020</button>
+        </div>
+    </div>    
+
+    <div class="envolve">    
+            <div id="pergunta">Com qual blusa estario eu usando no dia que nos beijamos pela primeira vez, multigata?</div>
+
+        <div>
+            <button type="button" id="a" onclick="guardar(1,9),selecionar(1,32)" class="btn-quiz foto"><img src="assets/WhatsApp Image 2021-06-23 at 13.08.16.jpeg" alt="" srcset="" width="100px" height="150px"></button>
+            
+            <button type="button" id="b" onclick="guardar(2,9),selecionar(2,32)" class="btn-quiz foto"><img src="assets/WhatsApp Image 2021-06-23 at 13.08.17.jpeg" alt="" srcset="" width="100px" height="150px"></button>
+            
+            <button type="button" id="c" onclick="guardar('RespostaCorreta',9),selecionar(3,32)" class="btn-quiz foto RespostaCorreta"><img src="assets/WhatsApp Image 2021-06-23 at 13.08.18.jpeg" alt="" srcset="" width="100px" height="150px"></button>
+            
+            <button type="button" id="d" onclick="guardar(4,9),selecionar(4,32)" class="btn-quiz foto"><img src="assets/WhatsApp Image 2021-06-23 at 13.08.19.jpeg" alt="" srcset="" width="100px" height="150px"></button>
+        </div>
+    </div>    
+
+    <div class="envolve">    
+            <div id="pergunta">Onde nos beijamos pela primeira vez, nenezinha?</div>
+
+        <div>
+            <button type="button" id="a" onclick="guardar(1,10),selecionar(1,36)" class="btn-quiz">UFPA</button>
+            <br><br>
+            <button type="button" id="b" onclick="guardar(2,10),selecionar(2,36)" class="btn-quiz">CESUPA</button>
+            <br><br>
+            <button type="button" id="c" onclick="guardar(3,10),selecionar(3,36)" class="btn-quiz">Na igreja</button>
+            <br><br>
+            <button type="button" id="d" onclick="guardar('RespostaCorreta',10),selecionar(4,36)" class="btn-quiz RespostaCorreta">Uber</button>
+        </div>
+    </div>    
+
+    <div class="envolve">    
+            <div id="pergunta">Quem beijou primeiro, vidaflor?</div>
+
+        <div>
+            <button type="button" id="a1" onclick="guardar('RespostaCorreta',11),selecionar(1,40)" class="btn-quiz RespostaCorreta">Eu Matheusmo</button>
+            <br><br>
+            <button type="button" id="b1" onclick="guardar(2,11),selecionar(2,40)" class="btn-quiz">Eu Anniemo</button>
+            <br><br>
+            <button type="button" id="c1" onclick="guardar(3,11),selecionar(3,40)" class="btn-quiz">Sincronizadamente juntos</button>
+            <br><br>
+            <button type="button" id="d1" onclick="guardar(4,11),selecionar(4,40)" class="btn-quiz">Nessa não saberio o que botar <br> mas clique para ver uma verdade</button>
+        </div>
+    </div>    
+
+    <div class="envolve">    
+            <div id="pergunta"></div>
+
+        <div>
+            <button type="button" id="a2" onclick="guardar(1,1),selecionar(1,8)" class="btn-quiz"></button>
+            <br><br>
+            <button type="button" id="b2" onclick="guardar(2,1),selecionar(2,8)" class="btn-quiz"></button>
+            <br><br>
+            <button type="button" id="c2" onclick="guardar(3,1),selecionar(3,8)" class="btn-quiz"></button>
+            <br><br>
+            <button type="button" id="d2" onclick="guardar(4,1),selecionar(4,8)" class="btn-quiz"></button>
+        </div>
+    </div>    
+
+    <div class="envolve">    
+            <div id="pergunta"></div>
+
+        <div>
+            <button type="button" id="a" onclick="guardar(1,1),selecionar(1,8)" class="btn-quiz"></button>
+            <br><br>
+            <button type="button" id="b" onclick="guardar(2,1),selecionar(2,8)" class="btn-quiz"></button>
+            <br><br>
+            <button type="button" id="c" onclick="guardar(3,1),selecionar(3,8)" class="btn-quiz"></button>
+            <br><br>
+            <button type="button" id="d" onclick="guardar(4,1),selecionar(4,8)" class="btn-quiz"></button>
+        </div>
+    </div>    
+
+    <div class="envolve">    
+            <div id="pergunta"></div>
+
+        <div>
+            <button type="button" id="a" onclick="guardar(1,1),selecionar(1,8)" class="btn-quiz"></button>
+            <br><br>
+            <button type="button" id="b" onclick="guardar(2,1),selecionar(2,8)" class="btn-quiz"></button>
+            <br><br>
+            <button type="button" id="c" onclick="guardar(3,1),selecionar(3,8)" class="btn-quiz"></button>
+            <br><br>
+            <button type="button" id="d" onclick="guardar(4,1),selecionar(4,8)" class="btn-quiz"></button>
+        </div>
+    </div>    
+
+    <div class="envolve">    
+            <div id="pergunta"></div>
+
+        <div>
+            <button type="button" id="a" onclick="guardar(1,1),selecionar(1,8)" class="btn-quiz"></button>
+            <br><br>
+            <button type="button" id="b" onclick="guardar(2,1),selecionar(2,8)" class="btn-quiz"></button>
+            <br><br>
+            <button type="button" id="c" onclick="guardar(3,1),selecionar(3,8)" class="btn-quiz"></button>
+            <br><br>
+            <button type="button" id="d" onclick="guardar(4,1),selecionar(4,8)" class="btn-quiz"></button>
+        </div>
+    </div>    
+
+    <div class="envolve">    
+            <div id="pergunta"></div>
+
+        <div>
+            <button type="button" id="a" onclick="guardar(1,1),selecionar(1,8)" class="btn-quiz"></button>
+            <br><br>
+            <button type="button" id="b" onclick="guardar(2,1),selecionar(2,8)" class="btn-quiz"></button>
+            <br><br>
+            <button type="button" id="c" onclick="guardar(3,1),selecionar(3,8)" class="btn-quiz"></button>
+            <br><br>
+            <button type="button" id="d" onclick="guardar(4,1),selecionar(4,8)" class="btn-quiz"></button>
+        </div>
+    </div>    
+
+    <div class="envolve">    
+            <div id="pergunta"></div>
+
+        <div>
+            <button type="button" id="a" onclick="guardar(1,1),selecionar(1,8)" class="btn-quiz"></button>
+            <br><br>
+            <button type="button" id="b" onclick="guardar(2,1),selecionar(2,8)" class="btn-quiz"></button>
+            <br><br>
+            <button type="button" id="c" onclick="guardar(3,1),selecionar(3,8)" class="btn-quiz"></button>
+            <br><br>
+            <button type="button" id="d" onclick="guardar(4,1),selecionar(4,8)" class="btn-quiz"></button>
+        </div>
+    </div>    
+
+    <div class="envolve">    
+            <div id="pergunta"></div>
+
+        <div>
+            <button type="button" id="a" onclick="guardar(1,1),selecionar(1,8)" class="btn-quiz"></button>
+            <br><br>
+            <button type="button" id="b" onclick="guardar(2,1),selecionar(2,8)" class="btn-quiz"></button>
+            <br><br>
+            <button type="button" id="c" onclick="guardar(3,1),selecionar(3,8)" class="btn-quiz"></button>
+            <br><br>
+            <button type="button" id="d" onclick="guardar(4,1),selecionar(4,8)" class="btn-quiz"></button>
+        </div>
+    </div>    
+
+    <div class="envolve">    
+            <div id="pergunta"></div>
+
+        <div>
+            <button type="button" id="a" onclick="guardar(1,1),selecionar(1,8)" class="btn-quiz"></button>
+            <br><br>
+            <button type="button" id="b" onclick="guardar(2,1),selecionar(2,8)" class="btn-quiz"></button>
+            <br><br>
+            <button type="button" id="c" onclick="guardar(3,1),selecionar(3,8)" class="btn-quiz"></button>
+            <br><br>
+            <button type="button" id="d" onclick="guardar(4,1),selecionar(4,8)" class="btn-quiz"></button>
+        </div>
+    </div>    
+
+    <div class="envolve">    
+            <div id="pergunta"></div>
+
+        <div>
+            <button type="button" id="a" onclick="guardar(1,1),selecionar(1,8)" class="btn-quiz"></button>
+            <br><br>
+            <button type="button" id="b" onclick="guardar(2,1),selecionar(2,8)" class="btn-quiz"></button>
+            <br><br>
+            <button type="button" id="c" onclick="guardar(3,1),selecionar(3,8)" class="btn-quiz"></button>
+            <br><br>
+            <button type="button" id="d" onclick="guardar(4,1),selecionar(4,8)" class="btn-quiz"></button>
+        </div>
+    </div>    
+
+    <div class="envolve">    
+            <div id="pergunta"></div>
+
+        <div>
+            <button type="button" id="a" onclick="guardar(1,1),selecionar(1,8)" class="btn-quiz"></button>
+            <br><br>
+            <button type="button" id="b" onclick="guardar(2,1),selecionar(2,8)" class="btn-quiz"></button>
+            <br><br>
+            <button type="button" id="c" onclick="guardar(3,1),selecionar(3,8)" class="btn-quiz"></button>
+            <br><br>
+            <button type="button" id="d" onclick="guardar(4,1),selecionar(4,8)" class="btn-quiz"></button>
+        </div>
+    </div>    
+
+    <div class="envolve">    
+            <div id="pergunta"></div>
+
+        <div>
+            <button type="button" id="a" onclick="guardar(1,1),selecionar(1,8)" class="btn-quiz"></button>
+            <br><br>
+            <button type="button" id="b" onclick="guardar(2,1),selecionar(2,8)" class="btn-quiz"></button>
+            <br><br>
+            <button type="button" id="c" onclick="guardar(3,1),selecionar(3,8)" class="btn-quiz"></button>
+            <br><br>
+            <button type="button" id="d" onclick="guardar(4,1),selecionar(4,8)" class="btn-quiz"></button>
+        </div>
+    </div>    
+
+    <div class="envolve">    
+            <div id="pergunta"></div>
+
+        <div>
+            <button type="button" id="a" onclick="guardar(1,1),selecionar(1,8)" class="btn-quiz"></button>
+            <br><br>
+            <button type="button" id="b" onclick="guardar(2,1),selecionar(2,8)" class="btn-quiz"></button>
+            <br><br>
+            <button type="button" id="c" onclick="guardar(3,1),selecionar(3,8)" class="btn-quiz"></button>
+            <br><br>
+            <button type="button" id="d" onclick="guardar(4,1),selecionar(4,8)" class="btn-quiz"></button>
+        </div>
+    </div>    
+
+    <div class="envolve">    
+            <div id="pergunta"></div>
+
+        <div>
+            <button type="button" id="a" onclick="guardar(1,1),selecionar(1,8)" class="btn-quiz"></button>
+            <br><br>
+            <button type="button" id="b" onclick="guardar(2,1),selecionar(2,8)" class="btn-quiz"></button>
+            <br><br>
+            <button type="button" id="c" onclick="guardar(3,1),selecionar(3,8)" class="btn-quiz"></button>
+            <br><br>
+            <button type="button" id="d" onclick="guardar(4,1),selecionar(4,8)" class="btn-quiz"></button>
+        </div>
+    </div>    
+
+    <div class="envolve">    
+            <div id="pergunta"></div>
+
+        <div>
+            <button type="button" id="a" onclick="guardar(1,1),selecionar(1,8)" class="btn-quiz"></button>
+            <br><br>
+            <button type="button" id="b" onclick="guardar(2,1),selecionar(2,8)" class="btn-quiz"></button>
+            <br><br>
+            <button type="button" id="c" onclick="guardar(3,1),selecionar(3,8)" class="btn-quiz"></button>
+            <br><br>
+            <button type="button" id="d" onclick="guardar(4,1),selecionar(4,8)" class="btn-quiz"></button>
+        </div>
+    </div>    
+
+    <div class="envolve">    
+            <div id="pergunta"></div>
+
+        <div>
+            <button type="button" id="a" onclick="guardar(1,1),selecionar(1,8)" class="btn-quiz"></button>
+            <br><br>
+            <button type="button" id="b" onclick="guardar(2,1),selecionar(2,8)" class="btn-quiz"></button>
+            <br><br>
+            <button type="button" id="c" onclick="guardar(3,1),selecionar(3,8)" class="btn-quiz"></button>
+            <br><br>
+            <button type="button" id="d" onclick="guardar(4,1),selecionar(4,8)" class="btn-quiz"></button>
+        </div>
+    </div>    
+
+    <div class="envolve">    
+            <div id="pergunta"></div>
+
+        <div>
+            <button type="button" id="a" onclick="guardar(1,1),selecionar(1,8)" class="btn-quiz"></button>
+            <br><br>
+            <button type="button" id="b" onclick="guardar(2,1),selecionar(2,8)" class="btn-quiz"></button>
+            <br><br>
+            <button type="button" id="c" onclick="guardar(3,1),selecionar(3,8)" class="btn-quiz"></button>
+            <br><br>
+            <button type="button" id="d" onclick="guardar(4,1),selecionar(4,8)" class="btn-quiz"></button>
+        </div>
+    </div>    
+
+    <div class="envolve">    
+            <div id="pergunta"></div>
+
+        <div>
+            <button type="button" id="a" onclick="guardar(1,1),selecionar(1,8)" class="btn-quiz"></button>
+            <br><br>
+            <button type="button" id="b" onclick="guardar(2,1),selecionar(2,8)" class="btn-quiz"></button>
+            <br><br>
+            <button type="button" id="c" onclick="guardar(3,1),selecionar(3,8)" class="btn-quiz"></button>
+            <br><br>
+            <button type="button" id="d" onclick="guardar(4,1),selecionar(4,8)" class="btn-quiz"></button>
+        </div>
+    </div>    
+
+    <div class="envolve">    
+            <div id="pergunta"></div>
+
+        <div>
+            <button type="button" id="a" onclick="guardar(1,1),selecionar(1,8)" class="btn-quiz"></button>
+            <br><br>
+            <button type="button" id="b" onclick="guardar(2,1),selecionar(2,8)" class="btn-quiz"></button>
+            <br><br>
+            <button type="button" id="c" onclick="guardar(3,1),selecionar(3,8)" class="btn-quiz"></button>
+            <br><br>
+            <button type="button" id="d" onclick="guardar(4,1),selecionar(4,8)" class="btn-quiz"></button>
+        </div>
+    </div>    
+
+    <div class="envolve">    
+            <div id="pergunta">Quando foi o primeiro ano novo que passamos juntos, amorvidamor?</div>
+
+        <div>
+            <button type="button" id="a" onclick="guardar(1,1),selecionar(1,8)" class="btn-quiz">31 de dezembro de 2020</button>
+            <br><br>
+            <button type="button" id="b" onclick="guardar(2,1),selecionar(2,8)" class="btn-quiz">31 de dezembro de 2021</button>
+            <br><br>
+            <button type="button" id="c" onclick="guardar(3,1),selecionar(3,8)" class="btn-quiz">1 de janeiro de 2020</button>
+            <br><br>
+            <button type="button" id="d" onclick="guardar(4,1),selecionar(4,8)" class="btn-quiz">1 de janeiro de 2021</button>
+        </div>
+    </div>    
+
+    <div id="envolvebtn">
+
+        <button onclick="MudarPagina('#firstid')" class="btn-quiz resp">Revisar Respostas</button>
+        <button onclick="popup(),resultado()" class="btn-quiz resp">Enviar Respostas</button>
+        
+    </div>
+
+    <div id="popup">
+        
+        <div id="cabe1">
+            <div id="close" onclick="closepopup()">
+                X
+            </div>
+            <h1 id="pend">Parabéns, amor da minha vida!</h1>
+            
+        </div>
+        <button class="btnfim" onclick="MarcarRespostas()">Conferir respostas</button> &nbsp;
+        <button class="btnfim" onclick="MarcarRespostas()">Menu principal</button>
+    </div>
+
+</body>
+</html>
+<script src="assets/main.js"></script>

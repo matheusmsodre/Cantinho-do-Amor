@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Yomogi&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sahitya&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/bolinhadegude.css">
+    <link rel="shortcut icon" href="assets/core.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Se divirta, minha linda!</title>
+</head>
+<body onload="iniciarjogo()">
+    <div id="conteudo">
+        <div id="seta" onclick="VoltarPagina()">
+            <img class="seta img" src="assets/seta.png" alt="" srcset="">
+        </div>
+        <div>
+            <p id="anuncio">Bem vinda ao jogo das bolinhas de gude, meu amor! <br> Faça sua aposta e vamos duelar!!!</p>
+            
+            <span id="x">Turno:</span> <span id="turno">Anniemo</span>
+            <button class="botoes IouP" onclick="apostarIouP(1)">Ímpar</button> <span>OU</span> 
+            <button class="botoes IouP" onclick="apostarIouP(0)">Par</button>
+        </div>
+
+            <p>Quantas bolinhas você deseja apostar?</p>
+        <div id="btns">
+            <button class="botoes" onclick="bolinhas(1,2)">1</button> <button class="botoes" onclick="bolinhas(2,3)">2</button> <button class="botoes" onclick="bolinhas(3,4)">3</button> <button class="botoes" onclick="bolinhas(4,5)">4</button> <button class="botoes" onclick="bolinhas(5,6)">5</button>
+            <button class="botoes" onclick="bolinhas(6,7)">6</button> <button class="botoes" onclick="bolinhas(7,8)">7</button> <button class="botoes" onclick="bolinhas(8,9)">8</button> <button class="botoes" onclick="bolinhas(9,10)">9</button> <button class="botoes" onclick="bolinhas(10,11)">10</button>
+                        <br><br>
+            <button class="botoes" onclick="bolinhas(11,12)">11</button> <button class="botoes" onclick="bolinhas(12,13)">12</button> <button class="botoes" onclick="bolinhas(13,14)">13</button> <button class="botoes" onclick="bolinhas(14,15)">14</button> <button class="botoes" onclick="bolinhas(15,16)">15</button>
+            <button class="botoes" onclick="bolinhas(16,17)">16</button> <button class="botoes" onclick="bolinhas(17,18)">17</button> <button class="botoes" onclick="bolinhas(18,19)">18</button> <button class="botoes" onclick="bolinhas(19,20)">19</button> <button class="botoes" onclick="bolinhas(20,21)">20</button>
+        </div>
+
+        <br><br>
+        <button id="btnjogar" onclick="Jogar()">Apostar</button>
+        <button id="btnrei" onclick="reloadpage()">Reiniciar</button>
+    </div>
+
+    <div>
+        <div id="popup">
+            <div id="close" onclick="closepopup()">
+                <span id="xclose">X</span>
+            </div>
+
+            <div id="lol">
+                <p id="popupctt"></p>
+                
+                <span id="A"></span>
+            </div>
+            <br>
+            <button class="btnpopup" onclick="MudarPagina('bolinhadegude.html')">Jogar Novamente</button> &nbsp;
+            <button class="btnpopup" onclick="MudarPagina('joguinhos.html')">Menu de jogos</button>
+        </div>
+    </div>
+
+</body>
+</html>
+<script src="assets/main.js"></script>

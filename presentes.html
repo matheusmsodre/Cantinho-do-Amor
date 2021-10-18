@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Tourney:wght@100;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Yomogi&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sahitya&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/presenetes.css">
+    <link rel="shortcut icon" href="assets/presente-de-casamento.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cantinho das Homenagens</title>
+</head>
+<body>
+    <div id="content">
+        <div id="seta" onclick="VoltarPagina(1)">
+            <img class="seta img" src="assets/seta.png" alt="" srcset="">
+        </div>
+    </div>
+
+    <div id="delimitador0" class="delimitador">
+        <img class="photo vertical" src="assets/presentes/corefotos.png">
+        <br>
+        <button class="BtnPassar" onclick="passarfoto(0,-1)"><</button> 
+        <button class="BtnPassar" onclick="passarfoto(0,1)">></button>
+        <a href="assets/presentes/corefotos.png" class="BtnBaixar" download>Baixar Imagem</a>
+    </div>
+
+    <br>
+
+    <div id="delimitador1" class="delimitador">
+        <img id="DN" class="photo" src="assets/presentes/DN0.png">
+        <br>
+        <button class="BtnPassar" onclick="passarfoto(1,-1)"><</button> 
+        <button class="BtnPassar" onclick="passarfoto(1,1)">></button>
+        <button id="btnabrir" class="Btn" onclick="Abrirfoto(1)">Abrir</button>
+        <a id="DNdown" href="assets/presentes/DN0.png" class="BtnBaixar" download>Baixar Imagem</a>
+    </div>
+
+    <br>
+    
+    <div id="delimitador2" class="delimitador">
+        <img id="meses" class="photo vertical extreme" src="assets/presentes/meses0.png">
+        <br>
+        <button class="BtnPassar" onclick="passarfoto(2,-1)"><</button> 
+        <button class="BtnPassar" onclick="passarfoto(2,1)">></button>
+        <button id="btnabrir" class="Btn" onclick="Abrirfoto(2)">Virar Página</button>
+        <a id="mesesdown" href="assets/presentes/meses0.png" class="BtnBaixar" download>Baixar Imagem</a>
+    </div>
+    <br>
+    
+    <div id="delimitador3" class="delimitador">
+        <img id="mundo" class="photo" src="assets/presentes/mundo0.png">
+        <br>
+        <button class="BtnPassar" onclick="passarfoto(3,-1)"><</button> 
+        <button class="BtnPassar" onclick="passarfoto(3,1)">></button>
+        <button id="btnabrir" class="Btn" onclick="Backpagemundo()">Voltar</button>
+        <button id="btnabrir" class="Btn" onclick="Passpagemundo()">Avançar</button>
+        <a id="mundodown" href="assets/presentes/mundos0.png" class="BtnBaixar" download>Baixar Imagem</a>
+    </div>
+    <br>
+
+    <div id="delimitador4" class="delimitador">
+        <img id="namo" class="photo" src="assets/presentes/namo0.png">
+        <br>
+        <button class="BtnPassar" onclick="passarfoto(4,-1)"><</button> 
+        <button class="BtnPassar" onclick="passarfoto(4,1)">></button>
+        <button id="btnabrir" class="Btn" onclick="Backpagenamo()">Voltar</button>
+        <button id="btnabrir" class="Btn" onclick="Passpagenamo()">Avançar</button>
+        <a id="namodown" href="assets/presentes/namo0.png" class="BtnBaixar" download>Baixar Imagem</a>
+    </div>
+    <br>
+
+    <div id="delimitador5" class="delimitador">
+        <img id="natal" class="photo" src="assets/presentes/natal0.png">
+        <br>
+        <button class="BtnPassar" onclick="passarfoto(5,-1)"><</button> 
+        <button class="BtnPassar" onclick="passarfoto(5,1)">></button>
+        <button id="btnabrir" class="Btn" onclick="Backpagenatal()">Voltar</button>
+        <button id="btnabrir" class="Btn" onclick="Passpagenatal()">Avançar</button>
+        <a id="nataldown" href="assets/presentes/natal0.png" class="BtnBaixar" download>Baixar Imagem</a>
+    </div>
+    <br>
+    
+    <div id="delimitador6" class="delimitador">
+        <img id="scrap" class="photo" src="assets/presentes/sb0.png">
+        <br>
+        <button class="BtnPassar" onclick="passarfoto(6,-1)"><</button> 
+        <button class="BtnPassar" onclick="passarfoto(6,1)">></button>
+        <button class="Btn" onclick="Backpage()">Voltar Página</button>
+        <button class="Btn" onclick="Passpage()">Passar Página</button>
+        <a id="scrapDown" href="assets/presentes/sb0.png" class="BtnBaixar" download>Baixar Imagem</a>
+    </div>
+    <br>
+    <div id="delimitador7" class="delimitador">
+        <img id="niver" class="photo" src="assets/presentes/niver0.png">
+        <br>
+        <button class="BtnPassar" onclick="passarfoto(7,-1)"><</button> 
+        <button id="btnabrir" class="Btn" onclick="Abrirfoto(3)">Virar Página</button>
+        <a id="niverdown" href="assets/presentes/niver0.png" class="BtnBaixar" download>Baixar Imagem</a>
+    </div>
+    <br>
+
+    <div id="popup">
+        <div id="close" >
+            <span id="xclose" onclick="closepopup()">X</span><a href="assets/homenagens/Cópia de Feliz Aniversário, meu amor!.jpg"" id="xclosen2" download>BAIXAR</a>
+        </div>
+        <img id="jbl" src="assets/homenagens/Cópia de Feliz Aniversário, meu amor!.jpg" alt="">
+    </div>
+
+        
+   
+</body>
+</html>
+<script src="assets/main.js"></script>r
