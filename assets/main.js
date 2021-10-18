@@ -103,7 +103,7 @@ function Abrirfoto(params){
     
     if(params==1){
         dianamo = document.getElementById("DN").src;
-        if( dianamo == "file:///C:/PROGRAMA%C3%87%C3%82O/HOGWARTS%20HOUSES/assets/presentes/DN0.png"){
+        if( dianamo == "file:///C:/PROGRAMA%C3%87%C3%82O/CANTINHO%20DO%20AMOR/assets/presentes/DN0.png"){
             document.getElementById("DN").src = "assets/presentes/DN1.png"
             document.getElementById("btnabrir").innerText = "Fechar"
             document.getElementById("DN").className = `photo vertical extreme`;
@@ -118,7 +118,7 @@ function Abrirfoto(params){
         }
     } else if(params==2){
         dianamo = document.getElementById("meses").src;
-        if( dianamo == "file:///C:/PROGRAMA%C3%87%C3%82O/HOGWARTS%20HOUSES/assets/presentes/meses0.png"){
+        if( dianamo == "file:///C:/PROGRAMA%C3%87%C3%82O/CANTINHO%20DO%20AMOR/assets/presentes/meses0.png"){
             document.getElementById("meses").src = "assets/presentes/meses1.png"
             dianamo = document.getElementById("meses").src;
             document.getElementById("mesesdown").href = `assets/presentes/meses1.png`
@@ -129,7 +129,7 @@ function Abrirfoto(params){
         }
     } else {
         dianamo = document.getElementById("niver").src;
-        if( dianamo == "file:///C:/PROGRAMA%C3%87%C3%82O/HOGWARTS%20HOUSES/assets/presentes/niver0.png"){
+        if( dianamo == "file:///C:/PROGRAMA%C3%87%C3%82O/CANTINHO%20DO%20AMOR/assets/presentes/niver0.png"){
             document.getElementById("niver").src = "assets/presentes/niver1.png"
             dianamo = document.getElementById("niver").src;
             document.getElementById("niverdown").href = `assets/presentes/niver1.png`
@@ -429,6 +429,8 @@ function closepopup(params) {
 function VoltarPagina(mural) {
     if(mural==1){
         window.location.href = `menu.html`
+    } else if(2){
+        window.location.href = `index.html`
     } else {
         window.history.back();
     }
@@ -478,6 +480,7 @@ function MudarTurno() {
     if(turno=="matheusmo"){
         turno = "anniemo";
         apostaAnnie = 0;
+        apostaIPannie = null;
         document.getElementById("turno").innerText = "Anniemo"
     }else if(turno=="anniemo"){
         turno="matheusmo";
