@@ -438,9 +438,9 @@ function VoltarPagina(mural) {
 }
 
 function passarfoto(params,side) {
-    if(side==1 && params<28){
+    if(side==1 && params<29){
         window.location.href = `#delimitador${params+1}`
-    } else if(side==-1 && params>0){
+    } else if(side==-1 && params>-1){
         window.location.href = `#delimitador${params-1}`
     }
 }
@@ -450,7 +450,9 @@ function passarfoto(params,side) {
 function preencher() {
     
     for(let i = -1; i <= 29; i++){
-        if(i<=21){
+        if(i==-1){
+            document.getElementById('content').innerHTML += `<div id="delimitador${i}" class="delimitador"><img class="photo" src="assets/mural/mural${i}.jpg" alt="" ><br>  <button class="BtnPassar" onclick="passarfoto(${i},1)">></button> <a href="assets/mural/mural${i}.jpg" class="BtnBaixar" download>Baixar Imagem</a></div><br>`
+        } else if(i<=21){
             document.getElementById('content').innerHTML += `<div id="delimitador${i}" class="delimitador"><img class="photo" src="assets/mural/mural${i}.jpg" alt="" ><br>  <button class="BtnPassar" onclick="passarfoto(${i},-1)"><</button> <button class="BtnPassar" onclick="passarfoto(${i},1)">></button> <a href="assets/mural/mural${i}.jpg" class="BtnBaixar" download>Baixar Imagem</a></div><br>`
         } else {
             if(i==29){
