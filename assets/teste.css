@@ -41,17 +41,17 @@ h1{
 }
 
 .pergunta{
-    font-size: 40px;
     text-align: center;
     color:white;
-    background-position: center;
     font-family: 'Sahitya';
     background-image: linear-gradient(to top ,rgb(255, 0, 47),rgb(0, 0, 97));
     border: 0px solid rgba(0, 0, 97, 1);
-    border-radius: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
     overflow-x: hidden;
     margin-bottom: 20px;
     font-size: 20pt;
+    width: 100%;
 }
 
 .btn-quiz{
