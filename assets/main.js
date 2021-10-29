@@ -7,8 +7,14 @@ var classe = document.getElementsByClassName("btn-quiz");
 var begin;
 var end;
 var i = 0;
+var NumberQuest;
+var NumeroQuestoes = 33;
+
+var MatrizResposta = [];
 
 function guardar(escolha,quest){
+
+    NumberQuest = quest-1;
 
     if(escolha=="RespostaCorreta"){
         resposta[quest-1] = 1;
@@ -20,20 +26,67 @@ function guardar(escolha,quest){
 
 function MarcarRespostas(){
     window.location.href = "#firstid";
-    for(let i = 0; i <= 28; i++){
-        document.getElementsByClassName("btn-quiz RespostaCorreta")[i].style.backgroundColor = "rgba(0,0,0,0)"
-        document.getElementsByClassName("btn-quiz RespostaCorreta")[i].style.color = "rgb(0, 163, 0)"
-        document.getElementsByClassName("btn-quiz RespostaCorreta")[i].style.boxShadow = "0px 0px 2px 2px rgb(0, 163, 0)"
-        document.getElementsByClassName("btn-quiz RespostaCorreta")[i].style.border = "2px solid rgb(0, 163, 0)"
+    closepopup();
+    for(let i = 0; i <= 441; i++){
+        if(classe[i].className=="btn-quiz RespostaCorreta"){
+            classe[i].style.backgroundColor = "rgba(0,0,0,0)"
+            classe[i].style.color = "rgb(0, 163, 0)"
+            classe[i].style.boxShadow = "0px 0px 2px 2px rgb(0, 163, 0)"
+            classe[i].style.border = "2px solid rgb(0, 163, 0)"
+            classe[i].style.fontSize = "18pt";
+        } else if(classe[i].className=="btn-quiz Errada"){
+            classe[i].style.backgroundColor = "rgba(0,0,0,0)"
+            classe[i].style.color = "rgb(255, 39, 39)"
+            classe[i].style.boxShadow = "0px 0px 2px 2px rgb(255, 39, 39)"
+            classe[i].style.border = "2px solid rgb(255, 39, 39)"
+            classe[i].style.fontSize = "18pt";
+        }
     }
 }
 
-function selecionar(alternativa,questao){
+function VerificarRspostas() {
+    
+    //for(let i = 0; i < NumeroQuestoes; i++){
+    //    debugger
+    //    if(resposta[i]!=0 && resposta[i]!=1){
+    //        alert("Termine o Quiz primeiro minha gatinha, para depois verificar as respostas mundo, Eu te amo mais!")
+    //        window.location.href = `#P${i+1}`;
+    //        break;
+    //    } else if(i==(NumeroQuestoes-1)){
+            popup();
+            resultado();
+            EncerrarQuiz();
+            MudarBtn();
+     //   }
+   // }
+}
+
+function EncerrarQuiz(){
+    for(let i = 0; i < classe.length-2; i++){
+        classe[i].disabled = true;
+        classe[i].style.cursor = "auto";
+        classe[i].style.fontSize = "15pt";
+        classe[i].style.boxShadow = "0px 0px 0px 0px rgb(0, 0, 96)";
+    }
+}
+
+function sayhello(){
+    alert("VOCÊ É A MAIS AMADA DO RELACIONAMENTO E ESSE ALERT É VERDADE HIHI!")
+}
+
+function selecionar(TipoQuest,alternativa,questao){
 
     let i;
-
-    begin = 0+questao;
-    end = 3+questao;
+    if(TipoQuest==4){
+        begin = 0+questao;
+        end = 3+questao;
+    } else if(TipoQuest==3){
+        begin = 0+questao;
+        end = 2+questao;
+    } else {
+        begin = 0+questao;
+        end = 1+questao;
+    }
     fator = questao;
     A = document.getElementsByClassName("btn-quiz")[0+fator];
     B = document.getElementsByClassName("btn-quiz")[1+fator];
@@ -41,58 +94,81 @@ function selecionar(alternativa,questao){
     D = document.getElementsByClassName("btn-quiz")[3+fator];
 
    if(alternativa==1){
-
         for(i = begin; i <= end; i++ ){    
             classe[i].style.backgroundColor = "rgba(255, 0, 47, 1)";
             classe[i].style.color = "white";
-            classe[i].style.fontSize = "18pt";
+            classe[i].style.fontSize = "15pt";
             classe[i].style.border = "3px solid rgb(255, 0, 47)";
             classe[i].style.boxShadow = "0px 0px 0px 0px rgb(0, 0, 96)";
+            if(classe[i].className != "btn-quiz RespostaCorreta"){
+                classe[i].className = "btn-quiz Neutro";
+            }
         }
         A.style.backgroundColor = "rgba(255, 0, 47, 0)";
         A.style.color = "rgb(255, 0, 47)";
-        A.style.fontSize = "21pt";
+        A.style.fontSize = "18pt";
         A.style.border = "2px solid rgba(0, 0, 96)";
         A.style.boxShadow = "0px 0px 2px 2px rgb(0, 0, 96)";
+        if(resposta[NumberQuest]==0){
+            A.className = "btn-quiz Errada";
+        }
     } else if(alternativa==2){
         for(i = begin; i <= end; i++ ){    
             classe[i].style.backgroundColor = "rgba(255, 0, 47, 1)";
             classe[i].style.color = "white";
-            classe[i].style.fontSize = "18pt";
+            classe[i].style.fontSize = "15pt";
             classe[i].style.border = "3px solid rgb(255, 0, 47)";
             classe[i].style.boxShadow = "0px 0px 0px 0px rgb(0, 0, 96)";
+            if(classe[i].className != "btn-quiz RespostaCorreta"){
+                classe[i].className = "btn-quiz Neutro";
+            }
         }
         B.style.backgroundColor = "rgba(255, 0, 47, 0)";
         B.style.color = "rgb(255, 0, 47)";
-        B.style.fontSize = "21pt";
+        B.style.fontSize = "18pt";
         B.style.border = "2px solid rgba(0, 0, 96)";
         B.style.boxShadow = "0px 0px 2px 2px rgb(0, 0, 96)";
+        if(resposta[NumberQuest]==0){
+            B.className = "btn-quiz Errada";
+        } 
     } else if(alternativa==3){
         for(i = begin; i <= end; i++ ){    
             classe[i].style.backgroundColor = "rgba(255, 0, 47, 1)";
             classe[i].style.color = "white";
-            classe[i].style.fontSize = "18pt";
+            classe[i].style.fontSize = "15pt";
             classe[i].style.border = "3px solid rgb(255, 0, 47)";
             classe[i].style.boxShadow = "0px 0px 0px 0px rgb(0, 0, 96)";
+            if(classe[i].className != "btn-quiz RespostaCorreta"){
+                classe[i].className = "btn-quiz Neutro";
+            }
         }
         C.style.backgroundColor = "rgba(255, 0, 47, 0)";
         C.style.color = "rgb(255, 0, 47)";
-        C.style.fontSize = "21pt";
+        C.style.fontSize = "18pt";
         C.style.border = "2px solid rgba(0, 0, 96)";
         C.style.boxShadow = "0px 0px 2px 2px rgb(0, 0, 96)";
+        if(resposta[NumberQuest]==0){
+            C.className = "btn-quiz Errada";
+        } 
     } else if(alternativa==4){
         for(i = begin; i <= end; i++ ){    
             classe[i].style.backgroundColor = "rgba(255, 0, 47, 1)";
             classe[i].style.color = "white";
-            classe[i].style.fontSize = "18pt";
+            classe[i].style.fontSize = "15pt";
             classe[i].style.border = "3px solid rgb(255, 0, 47)";
             classe[i].style.boxShadow = "0px 0px 0px 0px rgb(0, 0, 96)";
+            if(classe[i].className != "btn-quiz RespostaCorreta"){
+                classe[i].className = "btn-quiz Neutro";
+            }
         }
         D.style.backgroundColor = "rgba(255, 0, 47, 0)";
         D.style.color = "rgb(255, 0, 47)";
-        D.style.fontSize = "21pt";
+        D.style.fontSize = "18pt";
         D.style.border = "2px solid rgba(0, 0, 96)";
         D.style.boxShadow = "0px 0px 2px 2px rgb(0, 0, 96)";
+        if(resposta[NumberQuest]==0){
+            D.className = "btn-quiz Errada";
+        } 
     }
 
 }
@@ -141,7 +217,10 @@ function Abrirfoto(params){
     }
 }
 
-
+function MudarBtn() {
+    document.getElementById("envolvebtn").innerHTML = `<button onclick="MudarPagina('teste.html')" class="btn-quiz resp">Refazer teste</button>`
+    document.getElementById("envolvebtn").innerHTML += `<button onclick="MudarPagina('menu.html')" class="btn-quiz resp">Menu Principal</button>`
+}
 
 function resultado(){
 
@@ -154,10 +233,10 @@ function resultado(){
 
 // corretas = (acertos/100)*30
 
-    acertos = (100*corretas)/resposta.length;
+    acertos = (100*corretas)/NumeroQuestoes;
 
     document.getElementById("cabe1").innerHTML += `<p class="fimpp">Você respondeu a todas as perguntas e conseguiu terminar o quiz do nosso relacionamento,
-    acertando ${corretas} das ${resposta.length} questões, portanto ${acertos.toFixed(2)}% do quiz, minha lindona, PARABÉNS!
+    acertando ${corretas} das ${NumeroQuestoes} questões, portanto ${acertos.toFixed(2)}% do quiz, minha lindona, PARABÉNS!
     </p>
     <p class="fimpp2">
     Agora você pode conferir as respostas corretas ou voltar ao menu principal para aproveitar outra aventura do cantinho do amor, minha princesa!

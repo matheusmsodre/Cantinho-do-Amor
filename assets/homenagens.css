@@ -111,8 +111,7 @@ body{
 #popup{
     width: 98%;
     max-width: 850px;
-    height: auto;
-    max-height: 629px;
+    height: max-content;
     background-image: linear-gradient(to bottom,rgb(33, 33, 33),rgb(255, 196, 0));
     color: cornsilk;
     padding: 0;
