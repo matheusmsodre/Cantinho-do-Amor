@@ -213,3 +213,7 @@ h1{
     font-family: 'Sahitya';
     background-image: linear-gradient(to top ,rgb(255, 0, 47),rgb(0, 0, 97));
 }
+
+.paragraph{
+    padding: 0 10px 0 10px;
+}
