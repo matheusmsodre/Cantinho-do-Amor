@@ -80,20 +80,20 @@ body{
     width: 100px;
     border-right: 3px solid rgb(252, 4, 57);
     text-align: center;
-    letter-spacing: 0pt;
+    font-size: 10pt;
 }
 
 .quadro-indicador.L2{
     width: 100px;
     border-right: 3px solid rgb(252, 4, 57);
     text-align: center;
-    letter-spacing: 2pt;
+    font-size: 13pt;
 }
 .quadro-indicador.L3{
     width: 100px;
     border-right: 3px solid rgb(252, 4, 57);
     text-align: center;
-    letter-spacing: 3pt;
+    font-size: 13pt;
 }
 
 .quadro-indicador.L1.first{

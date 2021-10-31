@@ -442,7 +442,7 @@ function selectframe(coordenada,frameL,frameC){
 
     if(marcador=="desmarcar"){
         if(framecount[indice]==0){
-            quadro[indice].style.backgroundColor = 'rgb(253, 178, 194)';
+            quadro[indice].style.backgroundColor = 'rgb(252, 4, 57)';
             framecount[indice] = -1;
         } else {
             quadro[indice].style.backgroundColor = 'rgb(189, 214, 238)';
