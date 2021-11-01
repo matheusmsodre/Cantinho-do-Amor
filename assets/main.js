@@ -12,6 +12,9 @@ var NumeroQuestoes = 33;
 
 var MatrizResposta = [];
 
+var vitoriaAnnie = document.getElementsByClassName("vitorias")[0];
+var vitoriaMatheus = document.getElementsByClassName("vitorias")[1];
+
 function guardar(escolha,quest){
 
     NumberQuest = quest-1;
@@ -507,9 +510,13 @@ function closepopup(params) {
 
 function VoltarPagina(mural) {
     if(mural==1){
-        window.location.href = `menu.html`
+        window.location.href = `menu.html`;
     } else if(mural==2){
-        window.location.href = `index.html`
+        window.location.href = `index.html`;
+    } else if(mural==3){
+        sessionStorage.removeItem("VAnnie");
+        sessionStorage.removeItem("VMatheus");
+        window.history.back();
     } else {
         window.history.back();
     }
@@ -775,6 +782,9 @@ function Jogar() {
 
 }
 
+var CVA = sessionStorage.getItem("VAnnie");
+var CVM = sessionStorage.getItem("VMatheus");
+
 function fimdejogo() {
     document.getElementById("btnjogar").style.display = "None";
     document.getElementById("btnrei").style.display = "inline-block";
@@ -782,12 +792,36 @@ function fimdejogo() {
         document.getElementById("popupctt").innerText = "PARABÉNS, AMOR DA MINHA VIDA, VOCÊ GANHOU O JOGO!"
         document.getElementById("A").innerText += "Você ganhou todas as bolinhas de mim Matheusmo e venceu o jogo. Agora corra para me dar infinitos beijos puri voze me ganhou han"
         document.getElementById("A").innerHTML += `&nbsp&nbsp<img src="assets/emojimocionado.png" width="20px" height="20px" alt="">`
+        CVA++;
+        sessionStorage.setItem("VAnnie",CVA)
+        vitoriaAnnie.innerText = `${CVA}`
     } else {
         document.getElementById("popupctt").innerText = "Poxa, princesa da minha vida, você perdeu o jogo!"
         document.getElementById("A").innerText += "Mas não si entristeça meu mundo! Jogue novamente e venha correndo para os meu braços para eu lhe encher com infinitos bilhões de beijos"
         document.getElementById("A").innerHTML += `&nbsp&nbsp<img src="assets/emojimaoboca.png" width="25px" height="25px" alt="">`
+        CVM++;
+        sessionStorage.setItem("VMatheus",CVM)
+        vitoriaMatheus.innerText = `${CVM}`
     }
+
     popup();
+    
+}
+
+function escrever(params) {
+
+    if(CVA!=null){
+        vitoriaAnnie.innerText = `${CVA}`;
+    } else {
+        vitoriaAnnie.innerText = `0`;
+    }
+
+    if(CVM!=null){
+        vitoriaMatheus.innerText = `${CVM}`
+    } else {
+        vitoriaMatheus.innerText = `0`;
+    }
+   
     
 }
 
