@@ -673,6 +673,7 @@ function Jogar() {
                 if((apostaIPannie==0 && apostaMatheus%2==0) || (apostaIPannie==1 && apostaMatheus%2!=0)){
                     document.getElementById("anuncio").innerText = "Você ganhou a rodada, minha princesa!";
                     document.getElementById("anuncio").style.color = "rgb(0, 162, 32)";
+                    document.getElementById("anuncio").style.boxShadow = "0px 0px 2px 2px rgb(0, 162, 32)";
                     if(apostaAnnie>Matheusmo){
                         apostaAnnie = Matheusmo;
                     }
@@ -697,6 +698,7 @@ function Jogar() {
                 } else{
                     document.getElementById("anuncio").innerText = "Você perdeu a rodada, bebezinha!";
                     document.getElementById("anuncio").style.color = "rgb(255, 0, 0)";
+                    document.getElementById("anuncio").style.boxShadow = "0px 0px 2px 2px rgb(255, 0, 0)";
                     Matheusmo += apostaMatheus;
                     Anniemo -= apostaMatheus;
                     GouP = apostaMatheus;
@@ -726,6 +728,7 @@ function Jogar() {
                 if((apostaIPmatheus==0 && apostaAnnie%2==0) || (apostaIPmatheus==1 && apostaAnnie%2!=0)){
                     document.getElementById("anuncio").innerText = "Você perdeu a rodada, bebezinha!";
                     document.getElementById("anuncio").style.color = "rgb(255, 0, 0)";
+                    document.getElementById("anuncio").style.boxShadow = "0px 0px 2px 2px rgb(255, 0, 0)";
                     Matheusmo += apostaMatheus;
                     Anniemo -= apostaMatheus;
                     GouP = apostaMatheus;
@@ -747,6 +750,7 @@ function Jogar() {
                 } else {
                     document.getElementById("anuncio").innerText = "Você ganhou a rodada, minha princesa!";
                     document.getElementById("anuncio").style.color = "rgb(0, 162, 32)";
+                    document.getElementById("anuncio").style.boxShadow = "0px 0px 2px 2px rgb(0, 162, 32)";
                     if(apostaAnnie>Matheusmo){
                         apostaAnnie = Matheusmo;
                     }

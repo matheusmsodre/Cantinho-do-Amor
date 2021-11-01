@@ -100,6 +100,7 @@ p{
     border: 1px solid #ff002b;
     box-shadow: 0px 0px 1px 1px rgb(255, 0, 43);
     margin-right: 5px;
+    margin-bottom: 10px;
 }
 
 .botoes:hover{
@@ -114,10 +115,15 @@ p{
     background-color: black;
     border-radius: 10px;
     font-family: "Sahitya";
+    margin: 0 0 10px 0;
 }
 
 .botoes.IouP:hover{
     background-color: rgb(255, 0, 43);
+}
+
+#btns{
+    margin: -10px 0 0 0;
 }
 
 #btnjogar{
@@ -150,6 +156,7 @@ p{
     cursor: pointer;
     transition: 0.5s;
     box-sizing: content-box;
+    margin: 0 0 10px 0;
 }
 
 .btnpopup:hover{
